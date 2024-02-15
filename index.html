@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moving Image Band</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Protest+Revolution&family=Rubik+Glitch+Pop&family=Satisfy&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet"> <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;  
+      font-family: "Caveat", cursive;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    .moving-image-container {
+      position: relative;
+      height: 100vh;  
+      overflow: hidden;
+    }
+
+    .moving-image {
+      position: absolute;
+      width: 10vh; 
+      height: auto;
+      animation: moveAnimation 10s linear infinite;
+      border: 2px solid white;
+    }
+
+    
+    @keyframes moveAnimation {
+      0%, 100% {
+        transform: translatex(0);
+      }
+      50% {
+        transform: translateY(-100vh); 
+      }
+    }
+    .main-container{
+      background-image: url(./HD-wallpaper-one-piece-naruto-one-piece.jpg);
+      background-size:  100vw;
+      height: 100vh;
+      width: 100vw;
+      display: block;
+    }
+    .center-box{
+      background-image: url(./images/table.jpg);
+      width: 50vh;  
+      height: 70vh;
+      background-size: 50vb;
+      position:fixed ;
+      top: 20px;
+      border: 10px solid #ff6600; 
+      background-repeat: none;
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      
+  
+
+    }
+    .center-pic{
+      height: 100px;
+    }
+    .pre-center{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    .text-container{
+      display: flex;
+      background-color: rgba(245, 222, 179, 0.372);
+      width: 300px;
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+        
+      flex-direction: column;
+    }
+    .hbd{
+      display: flex;
+      border-radius: 20%;
+      justify-content: center;
+      font-size: 20px;
+      background-color: rgba(165, 42, 42, 0.27);
+      color: rgb(80, 30, 30);
+    }
+    .couple1{
+    margin-left: 49px;
+      width: 180px;
+      border-radius: 10%;
+       
+      border: 10px solid #FFB996;
+    }
+    .para{
+      color: rgb(255, 0, 0);
+      font-size: 16px;
+      padding: 10px;
+      text-align: justify;
+    }
+     .CUTIE{
+      color: darkred;
+     }
+     .love{
+      background-color: rgba(126, 35, 154, 0.302);
+      color: aliceblue;
+     }
+     .fixed-image-container {
+      position: fixed;
+      bottom: 10px;  
+      right: 10px; 
+      cursor: pointer;
+    }
+
+    .fixed-image {
+      width: 100px; 
+      height: auto;
+    }
+    .button{
+
+      background-color: #ff6600;
+      margin-left: 120px;
+      color: white;
+      position: fixed;
+      left:20px;
+      bottom:20px;
+      font-size: 50px;
+      cursor: pointer;
+  animation: breathe 3s infinite ease-in-out;
+
+    }
+    @keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+   
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="pre-center">
+        <div class="center-box">
+          
+           <div class="text-container">
+             <img src="./images/couple1.jpeg" class="couple1">
+           
+             <p class="hbd">SO THE DAY IS FINNALY HERE</p>
+
+             <p class="para">You know i write you letters often and bring you to the verge of getting diabetes with my sweet words but what can i do you are such a <span class="CUTIE">CUTIE</span> . So this time i thought to get you letter in a different way (cause why not) . Even though i am beginner in this but still i tried my best . <span class="love"> I LOVE YOU MY BEBU</span>. PRESS NEXT TO GO AHEAD. 
+             <HR>
+               
+            </p>
+           </div>
+        </div> 
+        
+    </div>
+    
+
+   <div class="moving-image-container">
+    
+    <img src="./images/start/s10.jpeg" alt="Moving Image 1" class="moving-image" style="top: 0;">
+    <img src="./images/start/s7.jpeg" alt="Moving Image 2" class="moving-image" style="top: 10vh;">
+    <img src="./images/start/s4.jpeg" alt="Moving Image 3" class="moving-image" style="top: 20vh;">
+    <img src="./images/start/s11.jpeg" alt="Moving Image 4" class="moving-image" style="top: 30vh;">
+    <img src="./images/start/s5.jpeg" alt="Moving Image 5" class="moving-image" style="top: 40vh;">
+    <img src="./images/start/s6.jpeg" alt="Moving Image 6" class="moving-image" style="top: 50vh;">
+    <img src="./images/start/s2.jpeg" alt="Moving Image 7" class="moving-image" style="top: 60vh;">
+    <img src="./images/start/s8.jpeg" alt="Moving Image 8" class="moving-image" style="top: 70vh;">
+    <img src="./images/start/s9.jpeg" alt="Moving Image 9" class="moving-image" style="top: 80vh;">
+    <img src="./images/start/s1.jpeg" alt="Moving Image 10" class="moving-image" style="top: 90vh;">
+  </div>
+  <div class="fixed-image-container">
+    <a href="./start.htm">
+      <img src="./images/heart1.png" alt="Clickable Image" class="fixed-image">
+    </a>
+    
+  </div>
+  <a href="./main.html"><button class="button"> NEXT❤️</button></a> 
+         
+</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open the Letter with Heart</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url(./bg\ heart.jpeg);
+            background-size: 100vw;
+            color: #333;
+        }
+
+        #envelope {
+            background-image: url(./paper.jpg);
+            position: relative;
+            width: 80vw;
+            max-width: 300px;
+            height: 150px;
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+             
+        }
+
+        #letter {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            width: 80%;
+            max-width: 300px;
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 10px;
+            display: none;
+        }
+
+        #envelope:hover {
+            transform: scale(1.1);
+        }
+
+        #envelope::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 4px;
+            background-color: #333;
+        }
+        .open-text{
+            text-align: center;
+        }
+        
+
+        #letter-content {
+            background-image: url(./paper.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            text-align: justify;
+            padding: 10px;
+            max-height: 70vh;
+        }
+        .pic{
+            height: 20vh;
+            float: left;
+            padding-right: 10px;
+        }
+        .fixed-image-container {
+      position: fixed;
+      bottom: 10px;  
+      right: 10px; 
+      cursor: pointer;
+    }
+    .fixed-image-container2 {
+      position: fixed;
+      bottom: 10px;  
+      left: 10px; 
+      cursor: pointer;
+    }
+
+    .fixed-image {
+      width: 100px; 
+      height: auto;
+      opacity: 50%;
+    }
+    </style>
+</head>
+<body>
+    <div id="envelope" onclick="openLetter()">
+        <p class="open-text"> 🥰❤️TAP TO OPEN 🥰❤️</p>
+         
+        <div id="letter">
+            <div id="letter-content">
+                <p><img src="./letter img.jpeg" class="pic"> Hi Bebu , I know it was annoying to do so much just  for a letter , but it is not a simple love letter its more than that at least for me . in last 2 years you have been a special part of my life and things really went great so far from beginning to the point we are today. you are a blessing in my life and I can surely say you are a blessing for everyone around you. I have seen you go through a lot of emotions and pain, and it feels great to see u still smiling. well today you turn 22 well you still a 5year old in a 22-year-old body and look like a 15year old and the most important you are as careless as a little baby. But that’s what I am here for to take care of my stubborn baby. Well, I wanted to do something for you to make your day special but I wish I could actually do it in person but its fine wait for the right time. I want to see you happy you are just 22 you have long life ahead and hopefully a long life ahead with me. You are special and you deserve all the happiness you dream of. The most important thing is stay motivated and in case I mean somehow or maybe by chance you feel demotivated sad or any of your magical hormones hot you just remember you have someone (the most Pogi guy) that is me, I am with you and will always be. Happy birthday to my girlfriend / bebu /wife/bun bun/ cupcake /boss/master etc. And sorry I don’t have money for your gift ……. Is it true? Use the magical work – JADUGAR JAIRA APNA JADU DIKHAIYE...! 
+                    I LOVE YOU SO MUCH MOR THEN THE NUMBER OF LETTER IN THIS LETTER❤️- Your Hun
+                     </p>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-image-container">
+        <a href="../index.html">
+          <img src="../images/heart1.png" alt="Clickable Image" class="fixed-image">
+        </a>
+        
+      </div>
+      <div class="fixed-image-container2">
+        <a href="../index.html">
+          <img src="gif1.gif" alt="Clickable Image" class="fixed-image">
+        </a>
+        
+      </div>
+      
+
+
+    <script>
+        function openLetter() {
+            const letter = document.getElementById("letter");
+            letter.style.display = (letter.style.display === "none" || letter.style.display === "") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

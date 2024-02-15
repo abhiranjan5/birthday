@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <style>
+        body {
+            background-image: url(./images/sus2.jpg);
+            background-size:50vh;
+            background-repeat: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #question {
+            margin-bottom: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #answerInput {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        #submitButton {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        p{
+            background-color: rgba(0, 255, 255, 0.569);
+            color: black;
+        }
+        .fixed-image-container {
+      position: fixed;
+      bottom: 10px;  
+      right: 10px; 
+      cursor: pointer;
+    }
+
+    .fixed-image {
+      width: 100px; 
+      height: auto;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            JUST TO MAKE SURE ITS MY LITTLE BABY ANSWER THIS SIMPLE QUESTION THAT ONLY MY BUN BUN CAN ANSWER
+        </p>
+    </div>
+    <div id="question">How many pics i have saved in my phone of my bebu</div>
+    <input type="text" id="answerInput" placeholder="Your answer">
+    <button id="submitButton" onclick="checkAnswer()">Submit</button>
+
+    <div id="result"></div>
+    <div>
+        <img src="./images/gif3.gif">
+    </div>
+    <div class="fixed-image-container">
+        <a href="./index.html">
+          <img src="./images/heart1.png" alt="Clickable Image" class="fixed-image">
+        </a>
+        
+      </div>
+
+    <script>
+        function checkAnswer() {
+            var userAnswer = document.getElementById('answerInput').value.toLowerCase();
+            var correctAnswer = "2000+";
+
+            if (userAnswer === correctAnswer) {
+                document.getElementById('result').innerHTML = "Correct!  SO you are my bebu ,Redirecting...";
+                setTimeout(function() {
+                    window.location.href = './wrong.html';
+                }, 5000);  
+            } else {
+                document.getElementById('result').innerHTML = "Incorrect answer.Are you really my bebu? Please try again.";
+            }
+        }
+    </script>
+</body>
+</html>

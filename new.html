@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Image Scrolling Animation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&family=Protest+Revolution&family=Satisfy&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  <style>
+    body {
+  margin: 0;
+  overflow: hidden;
+}
+body{
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-size: 100vh;
+}
+
+
+.image-container {
+  display: flex;
+  animation: scrollAnimation 30s linear infinite;  
+}
+
+.image-container img {
+   
+  height: 25vh;  
+  object-fit: cover;  
+  border: 10px solid;
+}
+.img2{
+    position: fixed;
+    bottom: 0vh;
+}
+
+@keyframes scrollAnimation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(-100vw * 1)); /* Adjust the number of images */
+  }
+}
+#center-box{
+  background-color: rgba(224, 166, 224, 0.493);
+  padding: 20px;
+  height: 50%;
+  width: 80%;
+  position: fixed;
+  top: 25%;
+  left:10%
+}
+h2{
+  background-color: pink;
+  color: #720455;
+}
+p{
+  color: #720455;
+  font-size: 17rerem;
+}
+.flower{float: left;
+  margin: 10rpx;
+  border: 10px solid salmon;
+height:200px;}
+.question{
+  text-align: center;
+  font-size: 23px;
+}
+button{ 
+            background-color:#D63484;
+            border: 1px solid white;
+            border-radius: 10%;
+            font-size: 10px;
+            height: 35px;
+            width: 75px;
+            text-align: center;
+            padding : 0px;
+            color: white;
+}
+.BUTTON{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fixed-image-container {
+      position: fixed;
+      bottom: 10px;  
+      right: 10px; 
+      cursor: pointer;
+    }
+
+    .fixed-image {
+      width: 100px; 
+      height: auto;
+    }
+
+  </style>
+</head>
+<body background="./images/BG.jpg">
+  <div class="image-container">
+    <img src="./images/pooki/po1.jpeg" alt="Moving Image 1" class="moving-image" style="top: 0;">
+    <img src="./images/pooki/po2.jpeg" alt="Moving Image 2" class="moving-image" style="top: 100vh;">
+    <img src="./images/pooki/po3.jpeg" alt="Moving Image 3" class="moving-image" style="top: 200vh;">
+    <img src="./images/pooki/po4.jpeg" alt="Moving Image 4" class="moving-image" style="top: 300vh;">
+    <img src="./images/pooki/po5.jpeg" alt="Moving Image 5" class="moving-image" style="top: 400vh;">
+    <img src="./images/pooki/po6.jpeg" alt="Moving Image 6" class="moving-image" style="top: 500vh;">
+    <img src="./images/pooki/po7.jpeg" alt="Moving Image 7" class="moving-image" style="top: 600vh;">
+    <img src="./images/pooki/po8.jpeg" alt="Moving Image 8" class="moving-image" style="top: 700vh;">
+    <img src="./images/pooki/po9.jpeg" alt="Moving Image 9" class="moving-image" style="top: 800vh;">
+    <img src="./images/pooki/po10.jpeg" alt="Moving Image 10" class="moving-image" style="top: 900vh;">
+    <img src="./images/pooki/po11.jpeg" alt="Moving Image 1" class="moving-image" style="top: 0;">
+    <img src="./images/pooki/po12.jpeg" alt="Moving Image 2" class="moving-image" style="top: 100vh;">
+    <img src="./images/pooki/po13.jpeg" alt="Moving Image 3" class="moving-image" style="top: 200vh;">
+    <img src="./images/pooki/po14.jpeg" alt="Moving Image 4" class="moving-image" style="top: 300vh;">
+    <img src="./images/pooki/po15.jpeg" alt="Moving Image 5" class="moving-image" style="top: 400vh;">
+    <img src="./images/pooki/po16.jpeg" alt="Moving Image 6" class="moving-image" style="top: 500vh;">
+    <img src="./images/pooki/po17.jpeg" alt="Moving Image 7" class="moving-image" style="top: 600vh;">
+    <img src="./images/pooki/po18.jpeg" alt="Moving Image 8" class="moving-image" style="top: 700vh;">
+    <img src="./images/pooki/po19.jpeg" alt="Moving Image 9" class="moving-image" style="top: 800vh;">
+    <img src="./images/pooki/po20.jpeg" alt="Moving Image 10" class="moving-image" style="top: 900vh;">
+  </div>
+   <div class="image-container img2">
+    <img src="./images/pooki/po21.jpeg" alt="Moving Image 1" class="moving-image" style="top: 0;">
+    <img src="./images/pooki/po22.jpeg" alt="Moving Image 2" class="moving-image" style="top: 100vh;">
+    <img src="./images/pooki/po23.jpeg" alt="Moving Image 3" class="moving-image" style="top: 200vh;">
+    <img src="./images/pooki/po24.jpeg" alt="Moving Image 4" class="moving-image" style="top: 300vh;">
+    <img src="./images/pooki/po25.jpeg" alt="Moving Image 5" class="moving-image" style="top: 400vh;">
+    <img src="./images/pooki/po26.jpeg" alt="Moving Image 6" class="moving-image" style="top: 500vh;">
+    <img src="./images/pooki/po27.jpeg" alt="Moving Image 7" class="moving-image" style="top: 600vh;">
+    <img src="./images/pooki/po28.jpeg" alt="Moving Image 8" class="moving-image" style="top: 700vh;">
+    <img src="./images/pooki/po29.jpeg" alt="Moving Image 9" class="moving-image" style="top: 800vh;">
+    <img src="./images/pooki/po30.jpeg" alt="Moving Image 10" class="moving-image" style="top: 900vh;">
+    <img src="./images/pooki/po31.jpeg" alt="Moving Image 1" class="moving-image" style="top: 0;">
+    <img src="./images/pooki/po32.jpeg" alt="Moving Image 2" class="moving-image" style="top: 100vh;">
+    <img src="./images/pooki/po33.jpeg" alt="Moving Image 3" class="moving-image" style="top: 200vh;">
+    <img src="./images/pooki/po34.jpeg" alt="Moving Image 4" class="moving-image" style="top: 300vh;">
+    <img src="./images/pooki/po35.jpeg" alt="Moving Image 5" class="moving-image" style="top: 400vh;">
+    <img src="./images/pooki/po36.jpeg" alt="Moving Image 6" class="moving-image" style="top: 500vh;">
+    <img src="./images/pooki/po37.jpeg" alt="Moving Image 7" class="moving-image" style="top: 600vh;">
+    <img src="./images/pooki/po38.jpeg" alt="Moving Image 8" class="moving-image" style="top: 700vh;">
+    <img src="./images/pooki/po39.jpeg" alt="Moving Image 9" class="moving-image" style="top: 800vh;">
+    <img src="./images/pooki/po40.jpeg" alt="Moving Image 10" class="moving-image" style="top: 900vh;">
+  </div>
+     <div id="center-box"  background: >
+      <h2> HAPPY BIRTHDAY TO MY PRETTY BUN BUN!!❤️❤️</h2>
+
+     <img src="./images/pooki/flower.jpeg" alt="flower" class="flower" />
+    <p class="first-paragraph"> SO FINALLY..!!! You found it . yeahhhh!!!
+
+    </p>
+    <p>
+      Well this is not the letter before you see the letter i wrote for you , you need to aswer a simple question.
+
+    </p>
+    <hr color="RED">
+    <BR>
+    <p class="question"> 
+     How much you love me???
+    </p>
+    <p class="button">
+      <a href="./try new/final letter.html" draggable="true"><button>infinite HENCE ENDLESS</button></a>
+      <a href="./try new/final letter.html"  draggable="true"><button>CANT EXPRESS❤️ </button></a>
+      <a href="./try new/final letter.html" draggable="true"><button>IS THAT EVEN A QUESTION</button></a>
+      <a href="./not-an-option.html"  draggable="true"><button >NO ! I DONT ! BLEE</button></a>
+    </p>
+
+
+     </div>
+     <div class="fixed-image-container">
+      <a href="./index.html">
+        <img src="./images/heart1.png" alt="Clickable Image" class="fixed-image">
+      </a>
+      
+    </div>
+     
+</body>
+</html>
